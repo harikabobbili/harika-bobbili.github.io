@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane fx:id="rootGridPane" style="-fx-background-color: #D9F7F0;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.internshalaP.javaFXapp.Controller">
+    <columnConstraints>
+        <ColumnConstraints />
+        <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" />
+        <RowConstraints />
+    </rowConstraints>
+    <children>
+        <Pane GridPane.columnSpan="2" />
+        <Pane fx:id="insertedDiscsPane" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="1" />
+        <VBox style="-fx-background-color: #2B3B4C;" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <children>
+                <TextField fx:id="player1Name" alignment="CENTER" prefHeight="28.0" prefWidth="226.0" promptText="Enter Name of Player 1 ">
+                    <VBox.margin>
+                        <Insets left="15.0" right="10.0" top="30.0" />
+                    </VBox.margin></TextField>
+                <TextField fx:id="player2Name" alignment="CENTER" promptText="Enter Name of Player 2">
+                    <VBox.margin>
+                        <Insets left="15.0" right="10.0" />
+                    </VBox.margin></TextField>
+                <Button fx:id="setNamesButton" mnemonicParsing="false" prefHeight="26.0" prefWidth="238.0" text="Set Names">
+                    <VBox.margin>
+                        <Insets left="15.0" top="10.0" />
+                    </VBox.margin></Button>
+                <Region prefHeight="0.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+                <Label fx:id="playerNameLabel" alignment="CENTER" prefHeight="25.0" prefWidth="256.0" text="Player One" textFill="#fdfcfc">
+                    <font>
+                        <Font name="System Bold" size="28.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="263.0" text="Turn" textFill="#fdfcfc">
+                    <font>
+                        <Font size="27.0" />
+                    </font></Label>
+                <Region prefHeight="150.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            </children></VBox>
+    </children>
+</GridPane>
